@@ -1,0 +1,127 @@
+:root {
+  --ink: #1c1c1e;
+  --muted: #5f6368;
+  --line: #e3e3e6;
+  --bg: #ffffff;
+  --accent: #1f4e79;
+  --max: 44rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 3rem 1.25rem 5rem;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "IBM Plex Sans Arabic", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Noto Naskh Arabic", "Geeza Pro", Tahoma, sans-serif;
+  font-size: 17px;
+  line-height: 1.85;
+}
+
+main,
+header,
+footer {
+  max-width: var(--max);
+  margin-inline: auto;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding-block-end: 1rem;
+  border-block-end: 1px solid var(--line);
+  margin-block-end: 2rem;
+}
+
+.brand {
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.lang {
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-decoration: none;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.25rem 0.85rem;
+}
+
+.lang:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+h1 {
+  font-size: 1.6rem;
+  line-height: 1.35;
+  margin: 0 0 0.35rem;
+}
+
+.dates {
+  color: var(--muted);
+  font-size: 0.86rem;
+  margin: 0 0 2rem;
+}
+
+h2 {
+  font-size: 1.05rem;
+  margin: 2.25rem 0 0.5rem;
+}
+
+p,
+ul {
+  margin: 0 0 0.9rem;
+}
+
+ul {
+  padding-inline-start: 1.25rem;
+}
+
+li {
+  margin-block-end: 0.3rem;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.lead {
+  font-size: 1.05rem;
+}
+
+.notice {
+  border-inline-start: 3px solid var(--accent);
+  background: #f6f8fa;
+  padding: 0.85rem 1rem;
+  margin: 0 0 2rem;
+  font-size: 0.95rem;
+}
+
+a {
+  color: var(--accent);
+}
+
+footer {
+  margin-block-start: 3rem;
+  padding-block-start: 1.25rem;
+  border-block-start: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+footer p {
+  margin-block-end: 0.4rem;
+}
